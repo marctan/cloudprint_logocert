@@ -702,7 +702,7 @@ class Privet(LogoCert):
     try:
       self.assertIsNotNone(response['code'])
     except AssertionError:
-      notes = 'No reponse code received.'
+      notes = 'No response code received.'
       self.LogTest(test_id, test_name, 'Failed', notes)
       raise
     else:
@@ -725,7 +725,7 @@ class Privet(LogoCert):
     try:
       self.assertIsNotNone(response['code'])
     except AssertionError:
-      notes = 'No reponse code received.'
+      notes = 'No response code received.'
       self.LogTest(test_id, test_name, 'Failed', notes)
       raise
     else:
@@ -748,7 +748,7 @@ class Privet(LogoCert):
     try:
       self.assertIsNotNone(response['code'])
     except AssertionError:
-      notes = 'No reponse code received.'
+      notes = 'No response code received.'
       self.LogTest(test_id, test_name, 'Failed', notes)
       raise
     else:
@@ -1915,7 +1915,7 @@ class LocalDiscovery(LogoCert):
     print 'This test should begin with the printer turned off.'
     raw_input('Select enter once printer is powered off.')
     print 'Turn printer on.'
-    raw_input('Select enter once printer is powered on and fully operationl.')
+    raw_input('Select enter once printer is powered on and fully operational.')
     print 'Waiting 10 seconds for printer to broadcast using mDNS.'
     time.sleep(10)  # Give printer time to send privet broadcast.
 
@@ -2149,7 +2149,7 @@ class LocalPrinting(LogoCert):
       else:
         self.LogTest(test_id, test_name, 'Passed', notes)
     else:
-      notes = 'Error togglging Local Printing.'
+      notes = 'Error toggling Local Printing.'
       self.LogTest(test_id, test_name, 'Blocked', notes)
 
   def testLocalPrintHeadersFooters(self):
@@ -2258,7 +2258,7 @@ class LocalPrinting(LogoCert):
     test_name = 'testLocalPrintLayout'
 
     # TODO: When the Chrome issue of local printing page layout is fixed, this
-    #       code shold be removed.
+    #       code should be removed.
     if not Constants.CAPS['LAYOUT_ISSUE']:
       notes = 'Printer does not have the workaround for the Chrome issue.'
       self.LogTest(test_id, test_name, 'Skipped', notes)
@@ -2517,7 +2517,7 @@ class LocalPrinting(LogoCert):
       self.ManualPass(test_id, test_name)
 
   def testLocalPrintGmailI18n(self):
-    """Verify Gmail with attachement prints using foreign characters."""
+    """Verify Gmail with attachment prints using foreign characters."""
     test_id = '5fa31002-b726-4a6a-b0d5-e21e3cc2ccf5'
     test_name = 'testLocalPrintGmailI18n'
 
@@ -3113,7 +3113,7 @@ class PrinterState(LogoCert):
       self.LogTest(test_id, test_name, 'Passed', notes)
 
   def testOpenPaperTray(self):
-    """Verifuy if open paper tray is reported correctly."""
+    """Verify if open paper tray is reported correctly."""
     test_id = '519969fa-97d1-4116-84e7-4f1f689e1df7'
     test_name = 'testOpenPaperTray'
     if not Constants.CAPS['TRAY_SENSOR']:

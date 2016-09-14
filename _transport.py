@@ -18,7 +18,7 @@ Methods to interact with higher level network protocols.
 Transport will provide methods to send and receive data using higher level
 protocols like HTTP, mDNS, etc.
 
-This module is dependent on modules from the LogoCert pacakge.
+This module is dependent on modules from the LogoCert package.
 """
 
 import mimetypes

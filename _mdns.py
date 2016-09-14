@@ -85,7 +85,7 @@ class MDnsListener(object):
                 }
 
     if proto not in protocols:
-      self.logger.error('Error starting listener, %s protocal unkown', proto)
+      self.logger.error('Error starting listener, %s protocol unknown', proto)
       return False
 
     ServiceBrowser(self.zeroconf, protocols[proto], self.listener)

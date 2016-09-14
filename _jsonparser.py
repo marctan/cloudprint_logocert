@@ -15,7 +15,7 @@ limitations under the License.
 
 Json parsing module for the LogoCert package.
 
-Use this module to handle parsing JSON messages into python dictionies, or for
+Use this module to handle parsing JSON messages into python dictionaries, or for
 packaging up various artifacts into JSON formatted messages.
 """
 
