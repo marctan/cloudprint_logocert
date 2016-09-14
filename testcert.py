@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-"""Copyright 2015 Google Inc. All Rights Reserved.
+"""Copyright 2016 Google Inc. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -326,9 +326,7 @@ class SystemUnderTest(LogoCert):
     """Record test environment details."""
     test_id = '5e5e44cd-4e37-4f16-b1ec-1874912c7449'
     test_name = 'testRecordTestEnv'
-    notes = 'Android: %s\n' % Constants.TESTENV['ANDROID']
     notes += 'Chrome: %s\n' % Constants.TESTENV['CHROME']
-    notes += 'Tablet: %s\n' % Constants.TESTENV['TABLET']
     notes += 'ChromeDriver: %s\n' % Constants.TESTENV['CHROMEDRIVER']
 
     self.LogTest(test_id, test_name, 'Skipped', notes)

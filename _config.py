@@ -24,7 +24,7 @@ import os
 
 
 class Constants(object):
-  """A classs that holds constants for the Logo Certification tool."""
+  """A class that holds constants for the Logo Certification tool."""
 
   ACCOUNTS = 'https://accounts.google.com'
 
@@ -173,12 +173,10 @@ class Constants(object):
       }
 
   TESTENV = {
-      'ANDROID': '<Android Version>',
       'CHROME': '<Chrome Version>',
       'CHROMEDRIVER': '<Chromedriver version>',
       'PYTHON': '<Python Version>',
       'OS': '<OS Name>',
-      'TABLET': '<Tablet Version>',
       }
 
   URL = {
