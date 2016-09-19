@@ -56,6 +56,7 @@ class ChromeDriver(object):
     options.add_argument('--enable-logging')
     options.add_argument('--v=1')
     options.add_argument('--lang=en')
+    options.add_argument('--disable-features=UsePasswordSeparatedSigninFlow')
     options.add_experimental_option("windowTypes", ["webview"])
     self.driver = webdriver.Chrome(chrome_options=options)
     self.action_chain = ActionChains(self.driver)
@@ -154,9 +155,6 @@ class ChromeDriver(object):
     try:
       self.GetWait().until(EC.presence_of_all_elements_located((By.CLASS_NAME,
                                                            classname)))
-      if classname == 'cp-job-name':
-        print 'waiting 60 seconds to find class cp-job-name'
-        time.sleep(60)
     except TimeoutException:
       self.logger.error('Timed out looking for class: %s', classname)
       return None
